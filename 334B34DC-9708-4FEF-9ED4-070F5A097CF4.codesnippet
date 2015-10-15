@@ -3,29 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>swRemoObjectInArray</string>
+	<string>swRandomInt</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extension RangeReplaceableCollectionType where Generator.Element : Equatable {
-    
-    // Remove first collection element that is equal to the given `object`:
-    mutating func removeObject(object : Generator.Element) {
-        if let index = self.indexOf(object) {
-            self.removeAtIndex(index)
-        }
-    }
-}</string>
+	<string>    func randomInt(min: Int, max:Int) -&gt; Int {
+        return min + Int(arc4random_uniform(UInt32(max - min + 1)))
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>07F013E5-A844-4EE9-BE0F-57E88DA1AED9</string>
+	<string>334B34DC-9708-4FEF-9ED4-070F5A097CF4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Swift Remove Object In Array</string>
+	<string>Swift Random Int</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift-RemoveObjectInArray</string>
+	<string>Swift Random Int</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
